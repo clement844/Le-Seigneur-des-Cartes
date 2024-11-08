@@ -1,0 +1,105 @@
+/* Base de la page */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour l'ensemble du texte */
+    margin: 0; /* Supprime la marge par défaut du body */
+    padding: 0; /* Supprime le padding par défaut du body */
+    background: url('image/041_lor019bs.jpg') no-repeat center center/cover;
+    background-size: 100%;
+    color: #2a150c; /* Couleur de texte claire pour contraster avec le fond sombre */
+    display: flex; /* Utilisation de Flexbox pour organiser le contenu */
+    flex-direction: column; /* Alignement des éléments du body en colonne */
+    min-height: 100vh; /* Le body prend toute la hauteur de la fenêtre */
+}
+
+.Zone-principale {
+    flex: 1; /* Permet au contenu principal d'occuper tout l'espace restant */
+}
+
+/* HEADER */
+header {
+    display: flex; /* Utilisation de Flexbox pour l'alignement horizontal du logo et du titre */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    background: url('image/champs\ de\ bataille.avif') no-repeat center center/cover;
+    padding: 10px; /* Ajoute un espacement de 20px autour du header */
+}
+
+header .conteneur-logo {
+    margin-right: 15px; /* Espace entre le logo et le titre */
+
+}
+
+header .logo {
+    height: 120px; /* Définition de la hauteur du logo */
+}
+
+header .titre {
+    font-size: 36px; /* Taille du texte pour le titre */
+    color: #f2f2a0; /* Couleur dorée pour le titre */
+    text-transform: uppercase; /* Met le titre en majuscules */
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+/* FIL D'ARIANE */
+.Fil-A {
+    background-color: #4a2503; /* Fond violet pour le fil d'ariane */
+    padding: 10px 20px; /* Ajout de padding (espacement interne) autour du fil d'ariane */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 16px; /* Taille de police plus petite pour le fil d'ariane */
+}
+
+.Fil-A a {
+    color: #f2f2a0; /* Couleur dorée pour les liens */
+    text-decoration: none; /* Enlève le soulignement par défaut des liens */
+    padding:5px; /* Ajoute un peu de padding entre les liens */
+}
+
+.Fil-A a:hover {
+    text-decoration: underline; /* Sous-ligne le lien au survol */
+}
+
+/* ZONE DES CARTES */
+.page-accueil {
+    flex-grow: 1; /* Prend tout l'espace restant de la zone principale */
+    text-align: center; /* Centre le contenu de la zone des cartes */
+    padding: 20px; /* Ajoute un padding autour de la zone des cartes */
+}
+
+.choisir-titre {
+    font-size: 60px; /* Taille de la police du titre "Choisis ta carte" */
+    margin-bottom: 30px; /* Ajoute un espace en bas du titre */
+    color: #000000; /* Couleur dorée pour le titre*/
+    text-transform: uppercase; /* Met le titre en majuscules */
+    font-weight : bold; /* texte en gras*/
+    text-shadow :  0 0 5px #ff0000; /* ombre derrière texte*/
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+.text1 {
+    font-size: 25px; /* Taille de la police du titre "Choisis ta carte" */
+    margin-bottom:20px; /* Ajoute un espace en bas du texte */
+    color: #000000; /* Couleur dorée pour le titre*/
+    font-weight : bold; /* texte en gras*/
+    text-shadow :  0 0 5px #ff0000; /* ombre derrière texte*/
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+.imageanim{
+    text-align: center; /* Centre le contenu de la zone des cartes */
+    margin-bottom:20px; /* Ajoute un espace en bas des gifs */
+}
+
+/* Responsivité : Pour les petits écrans */
+@media screen and (max-width: 768px) {
+   
+}
+
+footer {
+    display: flex; /* Utilisation de Flexbox pour l'alignement horizontal du logo et du titre */
+    justify-content: left; /* Centre le contenu horizontalement */
+    align-items: left; /* Centre le contenu verticalement */
+    background: url('image/champs\ de\ bataille.avif') no-repeat center center/cover;
+    padding: 20px; /* Ajoute un espacement de 20px autour du header */
+    font-size: 10px; /* Taille de la police pour le footer */
+    color: #f2f2a0; /* Couleur dorée pour le titre */
+}
