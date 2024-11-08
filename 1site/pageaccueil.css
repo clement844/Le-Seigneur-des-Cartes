@@ -86,7 +86,7 @@ header .titre {
 
 .imageanim{
     text-align: center; /* Centre le contenu de la zone des cartes */
-    margin-bottom:20px; /* Ajoute un espace en bas des gifs */
+    margin-bottom:5px; /* Ajoute un espace en bas des gifs */
 }
 
 /* Responsivité : Pour les petits écrans */
